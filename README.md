@@ -4,6 +4,10 @@ Milk Slider is a simple slider like a milk.
 
 ### Getting Started
 
+[Demo](https://tutorjs.github.io/milk-slider)
+
+#### HTML
+
 ```html
 <div class="gallery">
   <img src="path/to/your/directory" alt="image">
@@ -12,6 +16,7 @@ Milk Slider is a simple slider like a milk.
 </div>
 
 ```
+#### Javascript
 
 ```javascript
 
