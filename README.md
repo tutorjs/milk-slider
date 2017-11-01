@@ -1,5 +1,10 @@
 # Milk Slider
 
+[![GitHub issues](https://img.shields.io/github/issues/tutorjs/milk-slider.svg)](https://github.com/tutorjs/milk-slider/issues)
+[![GitHub forks](https://img.shields.io/github/forks/tutorjs/milk-slider.svg)](https://github.com/tutorjs/milk-slider/network)
+[![GitHub stars](https://img.shields.io/github/stars/tutorjs/milk-slider.svg)](https://github.com/tutorjs/milk-slider/stargazers)
+
+
 Milk Slider is a simple slider like a milk.
 
 ### Getting Started
