@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Milk Slider</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="src/css/milkslider.css">
+  <style>
+
+    pre {
+      background: #f2f2f2;
+      padding: 10px;
+    }
+
+    .container {
+      max-width: 1020px;
+      margin: 0 auto;
+    }
+
+    .title {
+      text-transform: uppercase;
+      font-weight: 1.5px;
+      text-align: center;
+    }
+    
+    .gallery {
+      padding: 20px 0;
+    }
+
+    .photo {
+      padding: 10px 0;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <p class="title">Simple Slider With VanillaJS</p>
+    
+    <pre>
+
+      // Javascript
+      new MILKSlider({
+        target: '.gallery',
+        width: 400
+      })
+
+    </pre>
+    
+    <div class="gallery">
+      <img src="images/pexels-photo-225767.jpeg" alt="image">
+      <img src="images/pexels-photo-226144.jpeg" alt="image">
+      <img src="images/pexels-photo-227404.jpeg" alt="image">
+      <img src="images/pexels-photo-230875.jpeg" alt="image">
+    </div>
+
+    <pre>
+
+      // Javascript
+      new MILKSlider({
+        target: '.gallery',
+        width: 800
+      })
+
+    </pre>
+
+    <div class="photo">
+      <img src="images/pexels-photo-225767.jpeg" alt="image">
+      <img src="images/pexels-photo-226144.jpeg" alt="image">
+      <img src="images/pexels-photo-227404.jpeg" alt="image">
+      <img src="images/pexels-photo-230875.jpeg" alt="image">
+    </div>
+
+  </div>
+
+  <script src="src/js/milkslider.js"></script>
+  <script>
+
+    new MILKSlider({
+      target: '.gallery',
+      width: 400
+    });
+
+    new MILKSlider({
+      target: '.photo',
+      width: 800
+    })
+
+  </script>
+</body>
+</html>
