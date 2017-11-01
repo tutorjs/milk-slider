@@ -7,9 +7,18 @@
 
 Milk Slider is a simple slider like a milk.
 
-### Getting Started
+### Install via CDN
 
-[Demo](https://tutorjs.github.io/milk-slider)
+```
+  // Javascript
+  https://cdn.rawgit.com/tutorjs/milk-slider/cde46831/src/js/milkslider.js)
+
+  // CSS
+  https://cdn.rawgit.com/tutorjs/milk-slider/cde46831/src/css/milkslider.css
+
+```
+
+### Getting Started
 
 #### HTML
 
@@ -31,5 +40,9 @@ new MILKSlider({
 })
 
 ```
+
+### Demo
+
+[Demo](https://tutorjs.github.io/milk-slider)
 
 Thanks.
