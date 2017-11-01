@@ -10,11 +10,11 @@ Milk Slider is a simple slider like a milk.
 ### Install via CDN
 
 ```
-  // Javascript
-  https://cdn.rawgit.com/tutorjs/milk-slider/cde46831/src/js/milkslider.js)
-
   // CSS
   https://cdn.rawgit.com/tutorjs/milk-slider/cde46831/src/css/milkslider.css
+
+  // Javascript
+  https://cdn.rawgit.com/tutorjs/milk-slider/cde46831/src/js/milkslider.js
 
 ```
 
