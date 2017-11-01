@@ -13,27 +13,21 @@
 
   // Selector Element
   function el(element) {
-  
     return document.querySelector(element);
-  
   };
 
   // Find Children Selector In Element
   function findChildren(element, selector) {
-  
     return element.querySelectorAll(selector);
-  
   };
 
   // Create Slide
   function createSlide(index) {
-  
     var slide = document.createElement('div');
   
     slide.classList.add('slide');
-
     slide.classList.add('fade');
-  
+
     slide.setAttribute('data-index', index);
 
     return slide;
@@ -41,20 +35,15 @@
 
   // Create Wrap Image To Slide
   function wrapImageToSlide(imageEls, width) {
-    
     // Create Document Fragment 
     var slideFragment = document.createDocumentFragment();
 
     Array.prototype.forEach.call(imageEls, function(element, index){
-  
       var slide = createSlide(index);
   
       element.setAttribute('style', 'width: ' + width + 'px;');
-  
       slide.appendChild(element);
-  
       slideFragment.appendChild(slide);
-  
     });
 
     return slideFragment;
@@ -114,7 +103,6 @@
 
   // Create Navigation
   Slides.prototype.createNavigation = function createNavigation() {
-    
     var divFragment = document.createDocumentFragment();
 
     var prevNav = document.createElement('a');
@@ -151,19 +139,19 @@
   // Move Slides
   Slides.prototype.moveSlides = function moveSlides(n) {
 
-    if (n < 1) {
+    if ( n < 1 ) {
       this.currentIndex = this.slide.length;
     }
 
-    if (n > this.slide.length) {
+    if ( n > this.slide.length ) {
       this.currentIndex = 1;
     }
 
-    for (var i = 0; i < this.slide.length; i++) {
+    for ( var i = 0; i < this.slide.length; i++ ) {
       this.slide[i].style.display = 'none';
     }
 
-    this.slide[this.currentIndex -1].style.display = 'block';
+    this.slide[ this.currentIndex -1 ].style.display = 'block';
   }
 
   return Slides;
