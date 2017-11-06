@@ -6,10 +6,7 @@
 * Author: Adiatma Kamarudin <adiatma9024@gmail.com>
 */
 
-require('../css/milkslider.css');
-
 ;(function (root, factory) {
-  // Instance MILKSlides
   root.MILKSlider = factory();
 })(this, function () {
 
@@ -26,7 +23,7 @@ require('../css/milkslider.css');
   // Create Slide
   function createSlide(index) {
     var slide = document.createElement('div');
-  
+
     slide.classList.add('slide');
     slide.classList.add('fade');
 
@@ -42,7 +39,7 @@ require('../css/milkslider.css');
 
     Array.prototype.forEach.call(imageEls, function(element, index){
       var slide = createSlide(index);
-  
+
       element.setAttribute('style', 'width: ' + width + 'px;');
       slide.appendChild(element);
       slideFragment.appendChild(slide);
@@ -100,7 +97,7 @@ require('../css/milkslider.css');
     var Navigation = this.createNavigation();
 
     target.appendChild(Navigation);
-  
+
   };
 
   // Create Navigation
@@ -124,19 +121,19 @@ require('../css/milkslider.css');
 
     return divFragment;
 
-  }
+  };
 
   // Navigation prev
   Slides.prototype.prev = function prev() {
     var n = this.currentIndex += -1;
     this.moveSlides(n);
-  }
+  };
 
   // Navigation next
   Slides.prototype.next = function next() {
     var n = this.currentIndex += 1;
     this.moveSlides(n);
-  }
+  };
 
   // Move Slides
   Slides.prototype.moveSlides = function moveSlides(n) {
@@ -154,7 +151,8 @@ require('../css/milkslider.css');
     }
 
     this.slide[ this.currentIndex -1 ].style.display = 'block';
-  }
+  
+  };
 
   return Slides;
 
