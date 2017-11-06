@@ -7,6 +7,15 @@
 
 Milk Slider is a simple slider like a milk.
 
+### Install via npm or yarn
+
+```bash
+  
+  yarn add milk-slider // yarn
+  npm install milk-slider // npm
+  
+```
+
 ### Install via CDN
 
 ```
