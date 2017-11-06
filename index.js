@@ -1,1 +1,1 @@
-module.exports = require('./src/js/milkslider.js');
+module.exports = require('./build/bundle.js');
