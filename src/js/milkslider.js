@@ -6,6 +6,8 @@
 * Author: Adiatma Kamarudin <adiatma9024@gmail.com>
 */
 
+require('../css/milkslider.css');
+
 ;(function (root, factory) {
   // Instance MILKSlides
   root.MILKSlider = factory();
