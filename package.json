@@ -1,6 +1,6 @@
 {
   "name": "milk-slider",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "simple slideshow with vanillajs",
   "main": "index.js",
   "author": "Adiatma Kamarudin <adiatma9024@gmail.com>",
