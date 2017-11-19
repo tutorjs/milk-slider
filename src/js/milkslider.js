@@ -7,7 +7,13 @@
 */
 
 ;(function (root, factory) {
+
+  if ( typeof require === "function" ) {
+    module.exports = factory();
+  }
+
   root.MILKSlider = factory();
+  
 })(this, function () {
 
   // Selector Element
