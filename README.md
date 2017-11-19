@@ -5,7 +5,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/tutorjs/milk-slider.svg)](https://github.com/tutorjs/milk-slider/stargazers)
 
 
-Milk Slider is a simple slider like a milk.
+milk slider is a simple slider like a milk.
 
 ### Install via npm or yarn
 
@@ -14,6 +14,19 @@ Milk Slider is a simple slider like a milk.
   yarn add milk-slider // yarn
   npm install milk-slider // npm
   
+```
+
+Please add CSS via CDN in your document HTML `https://cdn.rawgit.com/tutorjs/milk-slider/cde46831/src/css/milkslider.css`.
+
+```javascript
+
+  var MILKSlider = require('milk-slider');
+
+  MILKSlider({
+    target: '.gallery',
+    width: 400
+  });
+
 ```
 
 ### Install via CDN
@@ -49,6 +62,7 @@ new MILKSlider({
 })
 
 ```
+
 
 ### Demo
 
