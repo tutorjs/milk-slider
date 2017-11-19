@@ -7,6 +7,12 @@
   <link rel="stylesheet" href="src/css/milkslider.css">
   <style>
 
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
     pre {
       background: #f2f2f2;
       padding: 10px;
@@ -31,48 +37,41 @@
       padding: 10px 0;
     }
 
+    .panel-left {
+      float: left;
+      width: 50%;
+    }
+
+    .panel-right {
+      float: left;
+      width: 50%;
+    }
+
   </style>
 </head>
 <body>
 
   <div class="container">
-
     <p class="title">Simple Slider With VanillaJS</p>
-    
-    <pre>
-
-      // Javascript
-      new MILKSlider({
-        target: '.gallery',
-        width: 400
-      })
-
-    </pre>
-    
-    <div class="gallery">
-      <img src="images/pexels-photo-225767.jpeg" alt="image">
-      <img src="images/pexels-photo-226144.jpeg" alt="image">
-      <img src="images/pexels-photo-227404.jpeg" alt="image">
-      <img src="images/pexels-photo-230875.jpeg" alt="image">
+    <div class="panel-left">
+      <pre>
+  
+        // Javascript
+        new MILKSlider({
+          target: '.gallery',
+          width: 400
+        })
+  
+      </pre>
+    </div>    
+    <div class="panel-right">
+      <div class="gallery">
+        <img src="images/pexels-photo-225767.jpeg" alt="image">
+        <img src="images/pexels-photo-226144.jpeg" alt="image">
+        <img src="images/pexels-photo-227404.jpeg" alt="image">
+        <img src="images/pexels-photo-230875.jpeg" alt="image">
+      </div>
     </div>
-
-    <pre>
-
-      // Javascript
-      new MILKSlider({
-        target: '.gallery',
-        width: 800
-      })
-
-    </pre>
-
-    <div class="photo">
-      <img src="images/pexels-photo-225767.jpeg" alt="image">
-      <img src="images/pexels-photo-226144.jpeg" alt="image">
-      <img src="images/pexels-photo-227404.jpeg" alt="image">
-      <img src="images/pexels-photo-230875.jpeg" alt="image">
-    </div>
-
   </div>
 
   <script src="src/js/milkslider.js"></script>
@@ -82,11 +81,6 @@
       target: '.gallery',
       width: 400
     });
-
-    new MILKSlider({
-      target: '.photo',
-      width: 800
-    })
 
   </script>
 </body>
